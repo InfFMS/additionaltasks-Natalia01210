@@ -12,3 +12,17 @@ for i in range(len(s)):
         elif(s[i] == 'E'):
             x += a
             a = 0
+        elif(s[i] == 'S'):
+            y -= a
+            a = 0
+        elif(s[i] == 'N'):
+            y += a
+            a = 0
+if(x > 0):
+    print(x, "E", sep='',end='')
+elif(x < 0):
+    print(-x, "W", sep='', end='')
+if(y > 0):
+    print(y, "N", sep='',end='')
+elif(y < 0):
+    print(-y, "S", sep='', end='')
